@@ -1,14 +1,13 @@
-.links a {
+a {
   text-decoration: none;
   margin: 0;
-  display: flex;
-  flex-direction: column;
 }
 ul,
 h1,
 h2,
 h3,
-p {
+p,
+span {
   margin: 0;
   padding: 0;
 }
