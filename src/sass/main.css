@@ -38,4 +38,90 @@ root {
   --green-bgd: #c2e297;
   --social-bgd: #fea5bb;
 }
+
+.container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.contacts {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  background-color: #fff5f6;
+}
+
+.contacts__title {
+  display: none;
+}
+
+.contacts__wrapper {
+  width: 100%;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+          box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  padding: 43px 20px;
+}
+
+.contacts__wrapper:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contacts__category {
+  padding: 0 15px;
+  background: #f0d1a5;
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  display: inline-block;
+  letter-spacing: 0.04em;
+  font-family: DM Sans;
+  font-style: normal;
+  margin: 0%;
+}
+
+.contacts__category--green {
+  background: #c2e297;
+}
+
+.contacts__adress:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.contacts__adress-title {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.833;
+  letter-spacing: 0.04em;
+}
+
+.contacts__adress-text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.5;
+}
 /*# sourceMappingURL=main.css.map */
