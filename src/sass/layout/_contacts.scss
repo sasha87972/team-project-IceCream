@@ -15,6 +15,10 @@ h3 {
   margin: 0%;
 }
 
+ul {
+  margin: 0%;
+}
+
 .contacts {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -27,6 +31,12 @@ h3 {
     padding-top: 50px;
     padding-bottom: 50px;
     background-image: linear-gradient(to top, #fff5f6 82%, #fff 18%);
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('/images/contacts-background.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
 }
 
@@ -56,7 +66,6 @@ h3 {
     width: 330px;
     &:not(:first-child) {
       margin-left: 30px;
-      margin-bottom: 20px;
     }
   }
 }
@@ -155,18 +164,16 @@ h3 {
     min-width: 190px;
     &:not(:last-child) {
       margin-right: 15px;
+      margin-bottom: -10px;
     }
   }
   @media screen and (min-width: 1280px) {
     min-width: 198px;
-    &:not(:last-child) {
-      margin-right: 15px;
-    }
   }
 }
 
 .contacts__button--pink {
-  background-color: #d41342;
+  background-color: #d41443;
   color: #ffffff;
 }
 
@@ -189,6 +196,20 @@ h3 {
   }
 }
 
+.contacts__button--pink {
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+  }
+}
+
+.contacts__button--white {
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+}
+
 .contacts-icon__pink {
   fill: none;
   stroke: #d41342;
@@ -202,6 +223,10 @@ h3 {
 }
 
 .contatcs__box {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 54px;
+  }
+
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
@@ -211,4 +236,8 @@ h3 {
     display: flex;
     justify-content: center;
   }
+}
+
+.contacts_link {
+  display: flex;
 }
