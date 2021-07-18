@@ -19,12 +19,9 @@ img {
     &__list {
         display: flex;
         padding: 0;
+        position: relative;
     } 
-    &__title {
-        text-align: center;
-        text-transform: uppercase;
-    }
-    &__subtitle {
+    &__title, &__subtitle {
         text-align: center;
         text-transform: uppercase;
     } 
@@ -46,6 +43,11 @@ img {
         margin-top: 259px;
         &__ice-cream {
             background-color: #FFB8CA;
+            // &::before {
+            //     content: " ";
+            //     // display: inline-block;
+            //     position: absolute;
+            // }
         }
         &__ice-coffee {
             background-color: #F0D1A5;
@@ -60,14 +62,17 @@ img {
         padding-right: 44px;
         padding-bottom: 62px;
         text-align: center;
+        padding-top: 0;
     }
     &__img {
         display: flex;
         width: 335px;
         height: 335px;
         /* text-align: center; */
-        top: 49px;
+        // top: 49px;
+        left: 0;
         margin-top: 49px;
+        padding-right: 0px;
     }
     &__arrow {
         width: 40px;
