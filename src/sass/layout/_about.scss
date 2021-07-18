@@ -1,46 +1,55 @@
-.container {
+.about__container {
   padding-left: 20px;
   padding-right: 20px;
   @media screen and (min-width: 768px) {
     padding-left: 39px;
-  padding-right: 39px;
+    padding-right: 39px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 112px;
+    padding-right: 117px;
   }
 }
 .about {
+  max-width: 1280px;
   padding-top: 125px;
   padding-bottom: 39px;
   background: #fff5f6;
   background-position: right 0px bottom 80px;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: 
-    url(../images/about-milk-mob1x.png);
-
-    @media (min-device-pixel-ratio: 2) and (min-width: 480px),
-    (min-resolution: 192dpi) and (min-width: 480px),
-    (min-resolution: 2dppx) and (min-width: 480px) {
-    background-image: 
-      url(../images/about-milk-mob2x.png);
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/about-milk-mob1x.png);
+  }
+  @media (min-device-pixel-ratio: 2) and (max-width: 767px),
+    (min-resolution: 192dpi) and (max-width: 767px),
+    (min-resolution: 2dppx) and (max-width: 767px) {
+    background-image: url(../images/about-milk-mob2x.png);
   }
   @media screen and (min-width: 768px) {
-    background-image: 
-      url(../images/about-milk-mob2x.png);
-      padding-top: 130px;
-      padding-bottom: 66px;
+    padding-top: 130px;
+    padding-bottom: 66px;
   }
 
   @media screen and (min-width: 1280px) {
-    background-image: 
-      url(../images/about-milk-desk1x.png);
+    background-image: url(../images/about-milk-desk1x.png);
     background-size: 1280px;
+    background-position: right 0px bottom -60px;
   }
 
   @media (min-device-pixel-ratio: 2) and (min-width: 1280px),
     (min-resolution: 192dpi) and (min-width: 1280px),
     (min-resolution: 2dppx) and (min-width: 1280px) {
-    background-image: 
-      url(../images/about-milk-desk2x.png);
+    background-image: url(../images/about-milk-desk2x.png);
     background-size: 1280px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 130px;
+    padding-bottom: 66px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 125px;
+    padding-bottom: 0px;
   }
 }
 
@@ -54,6 +63,12 @@
   text-transform: uppercase;
   color: #ffa5ba;
   margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+  }
 }
 
 .about__title {
@@ -67,6 +82,26 @@
   text-transform: uppercase;
   color: #d41443;
   margin-bottom: 26px;
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+  }
+}
+.about__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 17px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-left: 74px;
+  }
 }
 .about__text {
   font-family: DM Sans;
@@ -74,13 +109,21 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.62;
-  color: #000000;
+  color: #907e82;
   margin-top: 45px;
   padding-left: 30px;
   padding-right: 30px;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    margin-top: 35px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  @media screen and (min-width: 1280px) {
+  }
 }
 .about__text-color {
-  color: #907e82;
+  color: #000000;
 }
 .about__button {
   background: #ffffff;
@@ -97,12 +140,20 @@
   align-items: center;
   justify-content: center;
   color: #d41443;
-  margin-left: 30px;
   margin-top: 17px;
-  transition:
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: 30px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    background-color: #ECEBEB;;
+    background-color: #ecebeb;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 0px;
+    margin-top: 62px;
+  }
+}
+.about__content {
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
 }
