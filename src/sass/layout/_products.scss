@@ -1,0 +1,89 @@
+
+ul{
+    list-style: none;
+}
+
+img {
+    position: absolute;
+    fill: none;
+}
+
+.container {
+    min-width: 1280px;
+}
+
+.products {
+    position: relative;
+    padding-left: 114px;
+    padding-right: 112px;
+    &__list {
+        display: flex;
+        padding: 0;
+    } 
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__subtitle {
+        text-align: center;
+        text-transform: uppercase;
+    } 
+    &__item {
+        flex-basis: calc((100% - 24px) / 2);
+    }
+    &__name {
+        color: white;
+        padding-top: 163px;
+        padding-right: 78px;
+        padding-left: 77px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__div {
+        width: 330px;
+        height: 525px;
+        border-radius: 24px;
+        margin-top: 259px;
+        &__ice-cream {
+            background-color: #FFB8CA;
+        }
+        &__ice-coffee {
+            background-color: #F0D1A5;
+        }
+        &__milkshakes {
+            background-color: #C2E297;
+        }
+    }
+    &__description {
+        color: white;
+        padding-left: 44px;
+        padding-right: 44px;
+        padding-bottom: 62px;
+        text-align: center;
+    }
+    &__img {
+        display: flex;
+        width: 335px;
+        height: 335px;
+        /* text-align: center; */
+        top: 49px;
+        margin-top: 49px;
+    }
+    &__arrow {
+        width: 40px;
+        height: 40px;
+        background-image: url(../images/arrow-right.png);
+        border: none;
+        background-color: transparent;
+        margin-bottom: 52px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    &__points {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        padding: 32px 151px;
+    }
+}
