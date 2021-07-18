@@ -1,7 +1,129 @@
+<<<<<<< Updated upstream
 .header {
   width: 100%;
   position: absolute;
   background-color: var(--pink-bgd);
+=======
+// .container {
+//   padding-left: 20px;
+//   padding-right: 20px;
+//   margin: 0 auto;
+//   max-width: 480px;
+// }
+
+// .header {
+//   width: 100%;
+//   background-color: #ffb8ca;
+// }
+
+// .logo {
+//   cursor: pointer;
+// }
+
+// .header__burger-button.is-open {
+//   display: none;
+// }
+// .header__drop-menu.is-open ~ .header-button {
+//   display: none;
+// }
+
+// .header-container {
+//   padding-top: 6px;
+// }
+
+// .header__burger-button {
+//   cursor: pointer;
+//   display: block;
+//   padding: 0;
+//   border: none;
+//   background: transparent;
+// }
+
+// .button {
+//   padding: 0px 36px;
+//   min-width: 159px;
+//   height: 44px;
+//   background: #fff;
+//   border-radius: 22px;
+//   font-weight: 700;
+//   color: #d41443;
+//   border: transparent;
+//   cursor: pointer;
+//   &:hover,
+//   &:focus {
+//     background: #ecebeb;
+//   }
+// }
+
+// .button-wrapper {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: baseline;
+//   color: #d41443;
+//   margin-left: 10px;
+// }
+
+// .button-icon {
+//   width: 10px;
+//   height: 10px;
+//   fill: #d41443;
+//   stroke: #d41443;
+//   margin-left: 16px;
+// }
+
+// .header__menu-icon {
+//   width: 20px;
+//   height: 12px;
+//   fill: #d41443;
+// }
+
+// .header-button {
+//   display: none;
+// }
+
+// .header__mobile {
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+// .header-container {
+//   padding-top: 37px;
+//   padding-left: 34px;
+//   padding-right: 34px;
+//   display: flex;
+// }
+
+// .navigation {
+//   display: none;
+// }
+
+// .navigation__list {
+//   display: flex;
+//   flex-direction: column;
+//   list-style: none;
+//   margin: 0;
+// }
+
+// .navigation__list-ltem-link {
+//   padding: 0;
+//   font-size: 14px;
+//   line-height: 1.285;
+//   text-decoration: none;
+//   display: block;
+//   padding: 0;
+//   height: 42px;
+//   //   border: 1px solid #e18298;
+//   line-height: 1.312;
+//   color: #fff;
+//   display: flex;
+//   align-items: center;
+// }
+
+.header {
+  width: 100%;
+  position: absolute;
+  background-color: pink;
+>>>>>>> Stashed changes
 }
 
 .logo {
@@ -39,18 +161,37 @@
   height: 44px;
   background: #fff;
   border-radius: 22px;
+<<<<<<< Updated upstream
   font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
   color: var(--accent-color);
+=======
+  // font-family: $primary-font-family;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #000;
+>>>>>>> Stashed changes
   border: transparent;
   cursor: pointer;
   &:hover,
   &:focus {
-    background: #ecebeb;
+    background: #757575;
   }
 }
+.button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: #000;
+  margin-left: 10px;
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+  }
+}
+<<<<<<< Updated upstream
 .button-wrapper {
   display: flex;
   justify-content: space-between;
@@ -61,11 +202,17 @@
     margin-left: 0;
   }
 }
+=======
+>>>>>>> Stashed changes
 .button-icon {
   width: 10px;
   height: 10px;
   fill: currentColor;
+<<<<<<< Updated upstream
   stroke: var(--accent-color);
+=======
+  stroke: #000;
+>>>>>>> Stashed changes
   margin-left: 16px;
   @media screen and (min-width: 768px) {
     margin-left: 12px;
@@ -77,7 +224,11 @@
   width: 20px;
   height: 12px;
   fill: currentColor;
+<<<<<<< Updated upstream
   color: var(--accent-color);
+=======
+  color: #000;
+>>>>>>> Stashed changes
 }
 
 @media screen and (max-width: 767px) {
@@ -135,7 +286,11 @@
   }
 }
 .main-button {
+<<<<<<< Updated upstream
   font-family: 'DM Sans', sans-serif;
+=======
+  // font-family: $primary-font-family;
+>>>>>>> Stashed changes
   font-weight: 700;
 }
 .header__drop-menu {
@@ -150,7 +305,11 @@
     padding-top: 60px;
     width: 250px;
     height: 502px;
+<<<<<<< Updated upstream
     background: var(--mobile-menu-bgd);
+=======
+    background: #e17992;
+>>>>>>> Stashed changes
     text-align: center;
     transform: translateX(100%) scaleX(0);
     pointer-events: none;
@@ -172,10 +331,17 @@
   right: 28px;
   border: none;
   background: transparent;
+<<<<<<< Updated upstream
   fill: var(--main-text-color);
   &:hover,
   &:focus {
     fill: #ecebeb;
+=======
+  fill: #fff;
+  &:hover,
+  &:focus {
+    fill: #757575;
+>>>>>>> Stashed changes
   }
 }
 
@@ -183,7 +349,11 @@
   display: block;
   width: 14px;
   height: 14px;
+<<<<<<< Updated upstream
   stroke: var(--main-text-color);
+=======
+  stroke: #fff;
+>>>>>>> Stashed changes
 }
 
 .drop-menu__button {
@@ -195,11 +365,19 @@
 
 .navigation__list-ltem-link {
   font-weight: 700;
+<<<<<<< Updated upstream
   color: var(--main-text-color);
 
   &:hover,
   &:focus {
     color: var(--accent-color);
+=======
+  color: #fff;
+
+  &:hover,
+  &:focus {
+    // color: #;
+>>>>>>> Stashed changes
   }
 }
 
