@@ -2,10 +2,16 @@
     <div class="container header-container">
         <div class="header__mobile">
             <a class="logo" href="./index.html">
-                <img src="./images/logo.png" alt="">
+                <picture>
+                    <img srcset="
+              ./images/hero/common/logo.png    199w,
+              ./images/hero/common/logo@2x.png 398w
+            " src="./images/hero/common/logo.png" alt="Логотип" sizes="199px" />
+                </picture>
             </a>
-            <button class="header__burger-button" type="button">
-                <svg class="header__menu-icon">
+            <button class="header__burger-button" type="button" aria-expanded="false" aria-controls="mobile-menu"
+                data-menu-open>
+                <svg class="header__menu-icon" aria-label="Кнопка открытия мобильного меню">
                     <use href="./images/sprite.svg/#burger"></use>
                 </svg>
             </button>
@@ -33,7 +39,7 @@
                         <a class="navigation__list-ltem-link" href="#slider">About us</a>
                     </li>
                     <li class="navigation__list-ltem">
-                        <a class="navigation__list-ltem-link" href="#how-its-made">How it’s made?</a>
+                        <a class="navigation__list-ltem-link" href="#how-its-work">How it’s made?</a>
                     </li>
                     <li class="navigation__list-ltem">
                         <a class="navigation__list-ltem-link" href="#products">Our products</a>
@@ -45,14 +51,11 @@
             </nav>
         </div>
         <button class="button header-button">
-            <span class="button-wrapper">       
+            <span class="button-wrapper">
                 Buy now<svg class="button-icon">
                     <use href="./images/sprite.svg#arrow-btn"></use>
                 </svg>
-                </span>
-            </button>
-        </nav>
+            </span>
+        </button>
     </div>
 </header>
-
-
