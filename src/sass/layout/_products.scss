@@ -1,9 +1,69 @@
+<<<<<<< HEAD
 ul{
     list-style: none;
 }
   
 .container {
     min-width: 320px;
+=======
+
+.container {
+  min-width: 320px;
+  @media screen and (min-width: 480px) {
+    min-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+  }
+  @media screen and (min-width: 1280px) {
+    min-width: 1280px;
+  }
+}
+
+.products {
+  position: relative;
+
+  padding: 120px 17px 100px 17px;
+  @media screen and (min-width: 768px) {
+    padding: 120px 34px 110px 34px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 125px 112px 120px 114pxpx;
+  }
+  &__list {
+    display: block;
+    padding: 0;
+    position: relative;
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+  &__title,
+  &__subtitle {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  &__name {
+    color: white;
+    padding-top: 161px;
+    padding-right: 78px;
+    padding-left: 77px;
+    text-transform: uppercase;
+    text-align: center;
+
+    // @media screen and (min-width: 480px) {
+    //     padding-left: 17px;
+    //     padding-right: 17px;
+    // }
+    @media screen and (min-width: 768px) {
+      padding-top: 152px;
+    }
+    
+
+>>>>>>> bc66550bb28383b9e20e15f9f05c6736353890b1
     margin: 0px auto;
     @media screen and (min-width: 480px) {
         width: 480px;
@@ -13,24 +73,40 @@ ul{
     }
     @media screen and (min-width: 1280px) {
         width: 1280px;
+<<<<<<< HEAD
     }
 }
   
+=======
+      padding-top: 163px;
+    }
+  }
+  &__div {
+    width: 329px;
+    height: 525px;
+    border-radius: 24px;
+
+>>>>>>> bc66550bb28383b9e20e15f9f05c6736353890b1
 .products {
     position: relative;
     padding-top: 122px;
     padding-bottom: 112px;
     padding-left: 17px;
     padding-right: 17px;
+<<<<<<< HEAD
     @media screen and (min-width: 480px) {
         padding-left: 17px;
         padding-right: 17px;
     }
+=======
+
+>>>>>>> bc66550bb28383b9e20e15f9f05c6736353890b1
     @media screen and (min-width: 768px) {
-        padding-left: 34px;
-        padding-right: 34px;
+      width: 220px;
+      height: 485px;
     }
     @media screen and (min-width: 1280px) {
+
         padding-left: 114px;
         padding-right: 112px;
     }
@@ -41,6 +117,10 @@ ul{
         position: relative;
         @media screen and (min-width: 768px) {
             display: flex;
+<<<<<<< HEAD
+=======
+
+>>>>>>> bc66550bb28383b9e20e15f9f05c6736353890b1
             justify-content: center;
         }
     } 
@@ -53,6 +133,7 @@ ul{
         text-align: center;
         letter-spacing: 0.04em;
         text-transform: uppercase;
+<<<<<<< HEAD
         color: #d41443;
         margin-bottom: 49px;
 
@@ -68,6 +149,17 @@ ul{
         color: #ffa5ba;
         margin-bottom: 15px;
     } 
+=======
+    } 
+
+    &__item {
+        flex-basis: calc((100% - 24px) / 2);
+        // &--milkshakes {
+
+
+        // }
+
+>>>>>>> bc66550bb28383b9e20e15f9f05c6736353890b1
     &__name {
         color: white;
         // padding-top: 161px;
@@ -84,12 +176,202 @@ ul{
         @media screen and (min-width: 768px) {
             padding-right: 53px;
             padding-left: 53px;
+<<<<<<< HEAD
             padding-top: 152px;
+=======
+
+            padding-top: 152px;
+
+>>>>>>> bc66550bb28383b9e20e15f9f05c6736353890b1
         }
         @media screen and (min-width: 1280px) {
             padding-top: 163px;
             padding-right: 78px;
             padding-left: 77px;
+<<<<<<< HEAD
+=======
+
+        }
+        
+    }
+    &__div {
+        width: 280px;
+        height: 485px;
+        border-radius: 24px;
+        margin-top: 130px;      
+        @media screen and (min-width: 768px) {
+            width: 220px;
+            height: 589px;
+            margin-top: 150px;
+        }
+        @media screen and (min-width: 1280px) {
+            width: 330px;
+            height: 525px;
+            margin-top: 259px;
+        }
+        
+        &__ice-cream {
+            background-color: #FFB8CA;
+        }
+        &__ice-coffee {
+            background-color: #F0D1A5;
+        }
+        &__milkshakes {
+            background-color: #C2E297;
+        }
+    }
+    &__description {
+        color: white;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 62px;
+        text-align: center;
+        padding-top: 0;
+        @media screen and (min-width: 768px) {
+            padding-left: 11px;
+            padding-right: 11px;
+        }
+        @media screen and (min-width: 1280px) {
+            padding-left: 44px;
+            padding-right: 44px;
+        }
+        &:before {
+            display: block;
+            content: '';
+            min-width: 26px;
+            min-height: 6px;
+            background-image: url('/images/points.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            fill: none;
+            margin: 30px 0px;
+            text-align: center;
+        }
+
+    }
+    &__img {
+        display: flex;
+        position: absolute;
+        width: 335px;
+        height: 335px;
+        fill: none;
+        left: 0;
+        margin-top: 49px;
+        padding-right: 0px;
+
+    }
+    &__arrow {
+      width: 40px;
+      height: 40px;
+      background-image: url(../images/arrow-right.png);
+      border: none;
+      background-color: transparent;
+      margin-bottom: 52px;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    &__points {
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0);
+      padding: 32px 151px;
+    }
+  }
+}
+
+
+.products__item--ice-cream {
+    position: relative;
+    &:before {
+        position: absolute;
+        display: inline-block;
+        content: '';
+        min-width: 249px;
+        min-height: 252px;
+        background-image: url('/images/pic1-m-2x.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        fill: none;
+        margin: 0px 15px;
+        transform: translateY(-45%);
+
+        @media screen and (min-width: 768px) {
+            min-width: 220px;
+            min-height: 233px;
+            margin: 0px;
+            transform: translateY(0%);
+        }
+        @media screen and (min-width: 1280px) {
+            transform: translateY(15%);
+            min-width: 335px;
+            min-height: 335px;
+        }
+    }
+}
+
+.products__item--ice-coffee {
+    position: relative;
+    &:before {
+        position: absolute;
+        display: inline-block;
+        content: '';
+        min-width: 249px;
+        min-height: 252px;
+        background-image: url('/images/pic2-m-2x.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        fill: none;
+        margin: 0px 15px;
+        transform: translateY(-45%);
+
+        @media screen and (min-width: 768px) {
+            min-width: 220px;
+            min-height: 233px;
+            margin: 0px;
+            transform: translateY(0%);
+        }
+        @media screen and (min-width: 1280px) {
+            transform: translateY(15%);
+            min-width: 335px;
+            min-height: 335px;
+        }
+    }
+}
+
+.products__item--milkshakes {
+    position: relative;
+    &:before {
+        position: absolute;
+        display: inline-block;
+        content: '';
+        min-width: 249px;
+        min-height: 252px;
+        background-image: url('/images/pic3-m-2x.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        fill: none;
+        margin: 0px 15px;
+        transform: translateY(-45%);
+
+        @media screen and (min-width: 768px) {
+            min-width: 220px;
+            min-height: 233px;
+            margin: 0px;
+            transform: translateY(0%);
+        }
+        @media screen and (min-width: 1280px) {
+            transform: translateY(15%);
+            min-width: 335px;
+            min-height: 335px;
+        }
+    }
+
+>>>>>>> bc66550bb28383b9e20e15f9f05c6736353890b1
             font-size: 30px;
         }
     }
@@ -268,5 +550,10 @@ ul{
             }
         }
     }   
+<<<<<<< HEAD
 }
   
+=======
+
+}
+>>>>>>> bc66550bb28383b9e20e15f9f05c6736353890b1
