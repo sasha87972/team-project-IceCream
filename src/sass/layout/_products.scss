@@ -1,19 +1,9 @@
 ul{
     list-style: none;
 }
-
+  
 .container {
     min-width: 320px;
-<<<<<<< Updated upstream
-    @media screen and (min-width: 480px) {
-        min-width: 480px;
-    }
-    @media screen and (min-width: 768px) {
-        min-width: 768px;
-    }
-    @media screen and (min-width: 1280px) {
-        min-width: 1280px;
-=======
     margin: 0px auto;
     @media screen and (min-width: 480px) {
         width: 480px;
@@ -23,21 +13,15 @@ ul{
     }
     @media screen and (min-width: 1280px) {
         width: 1280px;
->>>>>>> Stashed changes
     }
 }
-
+  
 .products {
     position: relative;
-<<<<<<< Updated upstream
-        padding-left: 17px;
-        padding-right: 17px;
-=======
     padding-top: 122px;
     padding-bottom: 112px;
     padding-left: 17px;
     padding-right: 17px;
->>>>>>> Stashed changes
     @media screen and (min-width: 480px) {
         padding-left: 17px;
         padding-right: 17px;
@@ -52,228 +36,60 @@ ul{
     }
     &__list {
         display: block;
+        justify-content: center;
         padding: 0;
         position: relative;
         @media screen and (min-width: 768px) {
             display: flex;
-<<<<<<< Updated upstream
-=======
             justify-content: center;
->>>>>>> Stashed changes
         }
     } 
-    &__title, &__subtitle {
+    &__title {
+        font-family: "Titan One";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 48px;
+        line-height: 1.145;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #d41443;
+        margin-bottom: 49px;
+
+    }
+    &__subtitle {
+        font-family: "Titan One";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 26px;
+        line-height: 1.145;
         text-align: center;
         text-transform: uppercase;
+        color: #ffa5ba;
+        margin-bottom: 15px;
     } 
-<<<<<<< Updated upstream
-    &__item {
-        flex-basis: calc((100% - 24px) / 2);
-        // &--milkshakes {
-
-
-        // }
-    }
-=======
->>>>>>> Stashed changes
     &__name {
         color: white;
         // padding-top: 161px;
         padding-right: 23px;
         padding-left: 23px;
+        padding-top: 161px;
         text-transform: uppercase;
+        font-family: "Titan One";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 1.145;
         text-align: center;
         @media screen and (min-width: 768px) {
             padding-right: 53px;
             padding-left: 53px;
-<<<<<<< Updated upstream
-=======
             padding-top: 152px;
->>>>>>> Stashed changes
         }
         @media screen and (min-width: 1280px) {
             padding-top: 163px;
             padding-right: 78px;
             padding-left: 77px;
-<<<<<<< Updated upstream
-        }
-        
-    }
-    &__div {
-        width: 280px;
-        height: 485px;
-        border-radius: 24px;
-        margin-top: 130px;      
-        @media screen and (min-width: 768px) {
-            width: 220px;
-            height: 589px;
-            margin-top: 150px;
-        }
-        @media screen and (min-width: 1280px) {
-            width: 330px;
-            height: 525px;
-            margin-top: 259px;
-        }
-        
-        &__ice-cream {
-            background-color: #FFB8CA;
-        }
-        &__ice-coffee {
-            background-color: #F0D1A5;
-        }
-        &__milkshakes {
-            background-color: #C2E297;
-        }
-    }
-    &__description {
-        color: white;
-        padding-left: 40px;
-        padding-right: 40px;
-        padding-bottom: 62px;
-        text-align: center;
-        padding-top: 0;
-        @media screen and (min-width: 768px) {
-            padding-left: 11px;
-            padding-right: 11px;
-        }
-        @media screen and (min-width: 1280px) {
-            padding-left: 44px;
-            padding-right: 44px;
-        }
-        &:before {
-            display: block;
-            content: '';
-            min-width: 26px;
-            min-height: 6px;
-            background-image: url('/images/points.png');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain;
-            fill: none;
-            margin: 30px 0px;
-            text-align: center;
-        }
-
-    }
-    &__img {
-        display: flex;
-        position: absolute;
-        width: 335px;
-        height: 335px;
-        fill: none;
-        left: 0;
-        margin-top: 49px;
-        padding-right: 0px;
-    }
-    &__arrow {
-        width: 40px;
-        height: 40px;
-        background-image: url(../images/arrow-right.png);
-        border: none;
-        background-color: transparent;
-        margin-bottom: 52px;
-        position: relative;
-        left: 50%;
-        transform: translate(-50%, 0);
-    }
-    &__points {
-        position: relative;
-        left: 50%;
-        transform: translate(-50%, 0);
-        padding: 32px 151px;
-    }
-}
-
-
-.products__item--ice-cream {
-    position: relative;
-    &:before {
-        position: absolute;
-        display: inline-block;
-        content: '';
-        min-width: 249px;
-        min-height: 252px;
-        background-image: url('/images/pic1-m-2x.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        fill: none;
-        margin: 0px 15px;
-        transform: translateY(-45%);
-
-        @media screen and (min-width: 768px) {
-            min-width: 220px;
-            min-height: 233px;
-            margin: 0px;
-            transform: translateY(0%);
-        }
-        @media screen and (min-width: 1280px) {
-            transform: translateY(15%);
-            min-width: 335px;
-            min-height: 335px;
-        }
-    }
-}
-
-.products__item--ice-coffee {
-    position: relative;
-    &:before {
-        position: absolute;
-        display: inline-block;
-        content: '';
-        min-width: 249px;
-        min-height: 252px;
-        background-image: url('/images/pic2-m-2x.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        fill: none;
-        margin: 0px 15px;
-        transform: translateY(-45%);
-
-        @media screen and (min-width: 768px) {
-            min-width: 220px;
-            min-height: 233px;
-            margin: 0px;
-            transform: translateY(0%);
-        }
-        @media screen and (min-width: 1280px) {
-            transform: translateY(15%);
-            min-width: 335px;
-            min-height: 335px;
-        }
-    }
-}
-
-.products__item--milkshakes {
-    position: relative;
-    &:before {
-        position: absolute;
-        display: inline-block;
-        content: '';
-        min-width: 249px;
-        min-height: 252px;
-        background-image: url('/images/pic3-m-2x.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        fill: none;
-        margin: 0px 15px;
-        transform: translateY(-45%);
-
-        @media screen and (min-width: 768px) {
-            min-width: 220px;
-            min-height: 233px;
-            margin: 0px;
-            transform: translateY(0%);
-        }
-        @media screen and (min-width: 1280px) {
-            transform: translateY(15%);
-            min-width: 335px;
-            min-height: 335px;
-        }
-    }
-=======
             font-size: 30px;
         }
     }
@@ -452,5 +268,5 @@ ul{
             }
         }
     }   
->>>>>>> Stashed changes
 }
+  
