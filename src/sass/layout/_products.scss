@@ -1,7 +1,3 @@
-
-
-
-
 .container {
   min-width: 320px;
   @media screen and (min-width: 480px) {
@@ -76,70 +72,68 @@
     }
 
     &__img {
-        display: flex;
-        position: absolute;
-        width: 335px;
-        height: 335px;
-        fill: none;
-        /* text-align: center; */
-        // top: 49px;
-        left: 0;
-        margin-top: 49px;
-        padding-right: 0px;
+      display: flex;
+      position: absolute;
+      width: 335px;
+      height: 335px;
+      fill: none;
+      /* text-align: center; */
+      // top: 49px;
+      left: 0;
+      margin-top: 49px;
+      padding-right: 0px;
 
-
-    &__ice-cream {
-      background-color: #ffb8ca;
-      // &::before {
-      //     content: " ";
-      //     // display: inline-block;
-      //     position: absolute;
-      // }
-
+      &__ice-cream {
+        background-color: #ffb8ca;
+        // &::before {
+        //     content: " ";
+        //     // display: inline-block;
+        //     position: absolute;
+        // }
+      }
+      &__ice-coffee {
+        background-color: #f0d1a5;
+      }
+      &__milkshakes {
+        background-color: #c2e297;
+      }
     }
-    &__ice-coffee {
-      background-color: #f0d1a5;
+    &__description {
+      color: white;
+      padding-left: 44px;
+      padding-right: 44px;
+      padding-bottom: 62px;
+      text-align: center;
+      padding-top: 0;
     }
-    &__milkshakes {
-      background-color: #c2e297;
+    &__img {
+      position: absolute;
+
+      display: flex;
+      width: 335px;
+      height: 335px;
+      /* text-align: center; */
+      // top: 49px;
+      left: 0;
+      margin-top: 49px;
+      padding-right: 0px;
     }
-  }
-  &__description {
-    color: white;
-    padding-left: 44px;
-    padding-right: 44px;
-    padding-bottom: 62px;
-    text-align: center;
-    padding-top: 0;
-  }
-  &__img {
-
-    position: absolute;
-
-    display: flex;
-    width: 335px;
-    height: 335px;
-    /* text-align: center; */
-    // top: 49px;
-    left: 0;
-    margin-top: 49px;
-    padding-right: 0px;
-  }
-  &__arrow {
-    width: 40px;
-    height: 40px;
-    background-image: url(../images/arrow-right.png);
-    border: none;
-    background-color: transparent;
-    margin-bottom: 52px;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
-  }
-  &__points {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
-    padding: 32px 151px;
+    &__arrow {
+      width: 40px;
+      height: 40px;
+      background-image: url(../images/arrow-right.png);
+      border: none;
+      background-color: transparent;
+      margin-bottom: 52px;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    &__points {
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0);
+      padding: 32px 151px;
+    }
   }
 }
