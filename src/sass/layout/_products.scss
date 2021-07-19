@@ -1,11 +1,4 @@
-ul {
-  list-style: none;
-}
-/*
-img {
-    position: absolute;
-    fill: none;
-}*/
+
 
 .container {
   min-width: 320px;
@@ -22,19 +15,13 @@ img {
 
 .products {
   position: relative;
-  padding-left: 17px;
-  padding-right: 17px;
-  @media screen and (min-width: 480px) {
-    padding-left: 17px;
-    padding-right: 17px;
-  }
+
+  padding: 120px 17px 100px 17px;
   @media screen and (min-width: 768px) {
-    padding-left: 34px;
-    padding-right: 34px;
+    padding: 120px 34px 110px 34px;
   }
   @media screen and (min-width: 1280px) {
-    padding-left: 114px;
-    padding-right: 112px;
+    padding: 125px 112px 120px 114pxpx;
   }
   &__list {
     display: block;
@@ -110,6 +97,9 @@ img {
     padding-top: 0;
   }
   &__img {
+
+    position: absolute;
+
     display: flex;
     width: 335px;
     height: 335px;
