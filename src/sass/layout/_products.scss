@@ -3,10 +3,10 @@ ul{
     list-style: none;
 }
 
-img {
-    position: absolute;
-    fill: none;
-}
+// img {
+//     position: absolute;
+//     fill: none;
+// }
 
 .container {
     min-width: 320px;
@@ -114,8 +114,10 @@ img {
     }
     &__img {
         display: flex;
+        position: absolute;
         width: 335px;
         height: 335px;
+        fill: none;
         /* text-align: center; */
         // top: 49px;
         left: 0;
