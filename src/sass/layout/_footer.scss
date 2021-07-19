@@ -11,7 +11,7 @@
   margin-bottom: 43px;
   width: 232px;
   height: auto;
-  font-family: Titan One;
+  font-family: 'Titan One';
   font-size: 18px;
   line-height: 1.17;
   text-transform: uppercase;
@@ -61,6 +61,7 @@
 .footer__inner {
   margin-left: auto;
   margin-bottom: 43px;
+  border-bottom: 1px solid #e1e1e1;
   @media screen and (min-width: 768px) {
     width: 268px;
     margin: 0;
@@ -105,7 +106,7 @@
 }
 .footer__text {
   margin: 0 0 43px auto;
-  font-family: DM Sans;
+  font-family: 'DM Sans', sans-serif;
   font-weight: bold;
   font-size: 12px;
   line-height: 1.83;
@@ -133,10 +134,8 @@
 .footer__copyright {
   display: block;
   width: 150px;
-  padding-top: 22px;
   margin: 0 auto 25px auto;
-  border-top: 1px solid #e1e1e1;
-  font-family: DM Sans;
+  font-family: 'DM Sans';
   font-weight: bold;
   font-size: 14px;
   line-height: 1.5;
