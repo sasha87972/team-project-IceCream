@@ -1,19 +1,60 @@
-ul{
-    list-style: none;
-}
 
 .container {
-    min-width: 320px;
-<<<<<<< Updated upstream
-    @media screen and (min-width: 480px) {
-        min-width: 480px;
-    }
+  min-width: 320px;
+  @media screen and (min-width: 480px) {
+    min-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+  }
+  @media screen and (min-width: 1280px) {
+    min-width: 1280px;
+  }
+}
+
+.products {
+  position: relative;
+
+  padding: 120px 17px 100px 17px;
+  @media screen and (min-width: 768px) {
+    padding: 120px 34px 110px 34px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 125px 112px 120px 114pxpx;
+  }
+  &__list {
+    display: block;
+    padding: 0;
+    position: relative;
     @media screen and (min-width: 768px) {
-        min-width: 768px;
+      display: flex;
     }
-    @media screen and (min-width: 1280px) {
-        min-width: 1280px;
-=======
+  }
+  &__title,
+  &__subtitle {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  &__name {
+    color: white;
+    padding-top: 161px;
+    padding-right: 78px;
+    padding-left: 77px;
+    text-transform: uppercase;
+    text-align: center;
+
+    // @media screen and (min-width: 480px) {
+    //     padding-left: 17px;
+    //     padding-right: 17px;
+    // }
+    @media screen and (min-width: 768px) {
+      padding-top: 152px;
+    }
+    
+
     margin: 0px auto;
     @media screen and (min-width: 480px) {
         width: 480px;
@@ -23,30 +64,27 @@ ul{
     }
     @media screen and (min-width: 1280px) {
         width: 1280px;
->>>>>>> Stashed changes
+      padding-top: 163px;
     }
-}
+  }
+  &__div {
+    width: 329px;
+    height: 525px;
+    border-radius: 24px;
 
 .products {
     position: relative;
-<<<<<<< Updated upstream
-        padding-left: 17px;
-        padding-right: 17px;
-=======
     padding-top: 122px;
     padding-bottom: 112px;
     padding-left: 17px;
     padding-right: 17px;
->>>>>>> Stashed changes
-    @media screen and (min-width: 480px) {
-        padding-left: 17px;
-        padding-right: 17px;
-    }
+
     @media screen and (min-width: 768px) {
-        padding-left: 34px;
-        padding-right: 34px;
+      width: 220px;
+      height: 485px;
     }
     @media screen and (min-width: 1280px) {
+
         padding-left: 114px;
         padding-right: 112px;
     }
@@ -56,26 +94,22 @@ ul{
         position: relative;
         @media screen and (min-width: 768px) {
             display: flex;
-<<<<<<< Updated upstream
-=======
+
             justify-content: center;
->>>>>>> Stashed changes
         }
     } 
     &__title, &__subtitle {
         text-align: center;
         text-transform: uppercase;
     } 
-<<<<<<< Updated upstream
+
     &__item {
         flex-basis: calc((100% - 24px) / 2);
         // &--milkshakes {
 
 
         // }
-    }
-=======
->>>>>>> Stashed changes
+
     &__name {
         color: white;
         // padding-top: 161px;
@@ -86,16 +120,15 @@ ul{
         @media screen and (min-width: 768px) {
             padding-right: 53px;
             padding-left: 53px;
-<<<<<<< Updated upstream
-=======
+
             padding-top: 152px;
->>>>>>> Stashed changes
+
         }
         @media screen and (min-width: 1280px) {
             padding-top: 163px;
             padding-right: 78px;
             padding-left: 77px;
-<<<<<<< Updated upstream
+
         }
         
     }
@@ -164,24 +197,26 @@ ul{
         left: 0;
         margin-top: 49px;
         padding-right: 0px;
+
     }
     &__arrow {
-        width: 40px;
-        height: 40px;
-        background-image: url(../images/arrow-right.png);
-        border: none;
-        background-color: transparent;
-        margin-bottom: 52px;
-        position: relative;
-        left: 50%;
-        transform: translate(-50%, 0);
+      width: 40px;
+      height: 40px;
+      background-image: url(../images/arrow-right.png);
+      border: none;
+      background-color: transparent;
+      margin-bottom: 52px;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0);
     }
     &__points {
-        position: relative;
-        left: 50%;
-        transform: translate(-50%, 0);
-        padding: 32px 151px;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0);
+      padding: 32px 151px;
     }
+  }
 }
 
 
@@ -273,7 +308,7 @@ ul{
             min-height: 335px;
         }
     }
-=======
+
             font-size: 30px;
         }
     }
@@ -452,5 +487,5 @@ ul{
             }
         }
     }   
->>>>>>> Stashed changes
+
 }
