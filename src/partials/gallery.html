@@ -1,4 +1,18 @@
-
 <section class="gallery">
-    <img src="./images/gallery-m-1x.png" alt="gallery">
+    <picture class="background-gallery">
+        <source srcset="
+          ./images/gallery-d-1x.png   1x,
+          ./images/gallery-d-2x.png 2x
+          " media="(min-width: 1280px)" type="image/png" />
+        <source srcset="
+        ./images/gallery-t-1x.png   1x,
+        ./images/gallery-t-2x.png 2x
+        " media="(min-width: 768px)" type="image/png" />
+        <source srcset="
+        ./images/gallery-m-1x.png   1x,
+        ./images/gallery-m-2x.png 2x
+        " media="(min-width: 320px)" type="image/png" />
+        <img src="./images/gallery-d-1x.png" alt="gallery" />
+    </picture>
 </section>
+

@@ -1,4 +1,13 @@
-.gallery {
+.gallery { 
+
+
   padding-top: 55px;
   padding-bottom: 40px;
+  background-image: linear-gradient(to bottom, var(--light-bgd) 40%, #fff 40%);
+}
+
+.background-gallery {
+  display: flex;
+  justify-content: center;
+
 }
