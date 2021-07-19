@@ -26,7 +26,8 @@
 }
 
 .contacts__wrapper {
-  width: 100%;
+  width: 220px;
+  margin: 0 auto;
   padding: 43px 20px;
   background: var(--main-text-color);
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -35,6 +36,7 @@
     padding: 50px 31px;
   }
   @media screen and (max-width: 1280px) {
+    width: 330px;
     padding: 52px 43px 61px 44px;
   }
 
@@ -126,15 +128,6 @@
 
 .contacts__list {
   padding: 0%;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.5;
-  color: #907e82;
-}
-
-.contacts__adress-text {
-  width: 180px;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -247,6 +240,7 @@
 
 .contacts__list-link {
   display: flex;
+  color: inherit;
 }
 
 .modal {
