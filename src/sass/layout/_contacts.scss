@@ -29,11 +29,12 @@ ul {
 
   @media screen and (min-width: 768px) {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 160px;
     background-image: linear-gradient(to top, #fff5f6 82%, #fff 18%);
   }
 
   @media screen and (min-width: 1280px) {
+    padding-bottom: 165px;
     background-image: url('/images/contacts-background.png'),
       linear-gradient(to top, #fff5f6 82%, #fff 18%);
     background-repeat: no-repeat;
