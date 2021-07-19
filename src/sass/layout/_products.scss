@@ -1,0 +1,139 @@
+.container {
+  min-width: 320px;
+  @media screen and (min-width: 480px) {
+    min-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+  }
+  @media screen and (min-width: 1280px) {
+    min-width: 1280px;
+  }
+}
+
+.products {
+  position: relative;
+
+  padding: 120px 17px 100px 17px;
+  @media screen and (min-width: 768px) {
+    padding: 120px 34px 110px 34px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 125px 112px 120px 114pxpx;
+  }
+  &__list {
+    display: block;
+    padding: 0;
+    position: relative;
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+  }
+  &__title,
+  &__subtitle {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  &__name {
+    color: white;
+    padding-top: 161px;
+    padding-right: 78px;
+    padding-left: 77px;
+    text-transform: uppercase;
+    text-align: center;
+
+    // @media screen and (min-width: 480px) {
+    //     padding-left: 17px;
+    //     padding-right: 17px;
+    // }
+    @media screen and (min-width: 768px) {
+      padding-top: 152px;
+    }
+    @media screen and (min-width: 1280px) {
+      padding-top: 163px;
+    }
+  }
+  &__div {
+    width: 329px;
+    height: 525px;
+    border-radius: 24px;
+
+    @media screen and (min-width: 768px) {
+      width: 220px;
+      height: 485px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 330px;
+      height: 525px;
+      margin-top: 259px;
+    }
+
+    &__img {
+      display: flex;
+      position: absolute;
+      width: 335px;
+      height: 335px;
+      fill: none;
+      /* text-align: center; */
+      // top: 49px;
+      left: 0;
+      margin-top: 49px;
+      padding-right: 0px;
+
+      &__ice-cream {
+        background-color: #ffb8ca;
+        // &::before {
+        //     content: " ";
+        //     // display: inline-block;
+        //     position: absolute;
+        // }
+      }
+      &__ice-coffee {
+        background-color: #f0d1a5;
+      }
+      &__milkshakes {
+        background-color: #c2e297;
+      }
+    }
+    &__description {
+      color: white;
+      padding-left: 44px;
+      padding-right: 44px;
+      padding-bottom: 62px;
+      text-align: center;
+      padding-top: 0;
+    }
+    &__img {
+      position: absolute;
+
+      display: flex;
+      width: 335px;
+      height: 335px;
+      /* text-align: center; */
+      // top: 49px;
+      left: 0;
+      margin-top: 49px;
+      padding-right: 0px;
+    }
+    &__arrow {
+      width: 40px;
+      height: 40px;
+      background-image: url(../images/arrow-right.png);
+      border: none;
+      background-color: transparent;
+      margin-bottom: 52px;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+    &__points {
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0);
+      padding: 32px 151px;
+    }
+  }
+}
