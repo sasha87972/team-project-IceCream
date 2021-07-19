@@ -1,13 +1,17 @@
-.gallery { 
-
-
+.gallery {
   padding-top: 55px;
   padding-bottom: 40px;
-  background-image: linear-gradient(to bottom, var(--light-bgd) 40%, #fff 40%);
+  background-image: linear-gradient(to bottom, var(--light-bgd) 48%, #fff 48%);
+
+  @media screen and(min-width:768px) {
+    background-image: linear-gradient(to bottom, var(--light-bgd) 45%, #fff 45%);
+  }
+  @media screen and(min-width:1280px) {
+    background-image: linear-gradient(to bottom, var(--light-bgd) 43%, #fff 43%);
+  }
 }
 
 .background-gallery {
   display: flex;
   justify-content: center;
-
 }
