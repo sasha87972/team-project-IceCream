@@ -85,7 +85,9 @@
     font-size: 58px;
   }
 }
-.about__list {
+.about__wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -99,22 +101,23 @@
     margin-left: 74px;
   }
 }
+.about__item {
+  margin-top: 45px;
+  @media screen and (min-width: 768px) {
+    margin-top: 35px;
+  }
+}
 .about__text {
   font-family: 'DM Sans';
   font-weight: 500;
   font-size: 12px;
   line-height: 1.62;
   color: #907e82;
-  margin-top: 45px;
-  padding-left: 30px;
-  padding-right: 30px;
+
   @media screen and (min-width: 768px) {
     font-size: 14px;
-    margin-top: 35px;
     padding-left: 0px;
     padding-right: 0px;
-  }
-  @media screen and (min-width: 1280px) {
   }
 }
 .about__text-color {
@@ -129,8 +132,6 @@
   width: 176px;
   height: 44px;
   cursor: pointer;
-  padding: 17px 37px;
-  margin-left: 50px;
   margin-top: 17px;
   background-color: #ffffff;
   color: #d41342;
@@ -140,12 +141,7 @@
     background-color: #ecebeb;
   }
   @media screen and (min-width: 768px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: baseline;
     font-size: 14px;
-    margin-left: 0px;
     margin-top: 62px;
   }
   @media screen and (min-width: 1280px) {
