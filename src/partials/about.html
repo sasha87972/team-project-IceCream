@@ -33,7 +33,7 @@
                 </p>
                 </li>
             </ul> 
-                <button class="about__button">
+                <button data-modal-open class="about__button">
                 Read more
                 <svg class="contacts-icon__pink" width="3.61px" height="8">
                     <use href="/images/contacts.svg#contacts-icon"></use>
@@ -43,3 +43,65 @@
         </div>
     </div>
 </section>
+<!-- modal -->
+<div class="about-modal is-hidden" data-modal>
+    <div class="about-modal__container">
+        <button class="about-modal__close" data-modal-close>
+            <svg width="24" height="16">
+                <use class="about-modal__close__icon" href="./images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+        <section class="torquent">
+         <p class="torquent__pretitle">ORCI VARIUS</p>
+            <h2 class="torquent__title">TORQUENT</h2>
+        <div class="torquent__content">
+        <img class="torquent__img" src="./images/icecream2-about-pic1.jpeg" alt="imeg-modal">
+            <div class="torquent__wrapper">
+            <ul class="torquent__list">
+                <li class="torquent__item">
+                    <p class="torquent__text about__text-color">Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel
+                    vestibulum libero pharetra vel. Pellentesque lorem augue, fermentum nec nibh et, fringilla sollicitudin orci.</p>
+                </li>
+                <li class="torquent__item">
+                    <p class="torquent__text">Integer pharetra magna non ante blandit lobortis. Sed mollis consequat eleifend. Aliquam consectetur orci eget dictum
+                    tristique. Aenean et sodales est, ut vestibulum lorem. Ut ultricies imperdiet sodales. Aliquam fringilla.</p>
+                </li>
+                <li class="torquent__item">
+                    <p class="torquent__text">Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo
+                    varius purus, non dictum elit nibh ut massa.</p>
+                </li>
+            </ul>
+            <button type="submit" class="about-modal__button">Read more</button>
+            </div>
+        </div>
+        </section>
+        <section class="team">
+            <p class="team__pretitle">MEET</p>
+            <h2 class="team__title">OUR TEAM</h2>
+            <button type="submit" class="about-modal__button team__button">Contact us</button>
+        <ul class="team__list">
+            <li class="team__list__card">
+                <img class="team__list__img" src="./images/team-about-pic2.png" alt="imeg-modal-team">
+                <div class="team__list__box">
+                    <h3 class="team__list__name">NAO</h3>
+                    <p class="team__list__description">Velit commodo</p>
+                </div>
+            </li>
+            <li class="team__list__card">
+                <img class="team__list__img" src="./images/team-about-pic3.png" alt="imeg-modal-team">
+                <div class="team__list__box">
+                    <h3 class="team__list__name">AGNES</h3>
+                    <p class="team__list__description">Mauris maximus</p>
+                </div>
+            </li>
+            <li class="team__list__card">
+                <img class="team__list__img" src="./images/team-about-pic4.png" alt="imeg-modal-team">
+                <div class="team__list__box">
+                    <h3 class="team__list__name">MARIE</h3>
+                    <p class="team__list__description">Sed ultrices</p>
+                </div>
+            </li>
+        </ul>
+        </section>
+    </div>
+</div>
