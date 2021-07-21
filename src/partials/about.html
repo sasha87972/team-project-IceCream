@@ -33,7 +33,7 @@
                 </p>
                 </li>
             </ul> 
-                <button class="about__button">
+                <button data-modal-open class="about__button">
                 Read more
                 <svg class="contacts-icon__pink" width="3.61px" height="8">
                     <use href="/images/contacts.svg#contacts-icon"></use>
@@ -43,3 +43,35 @@
         </div>
     </div>
 </section>
+<!-- modal -->
+<div class="about-modal is-hidden" data-modal>
+    <div class="about-modal__container">
+        <button class="about-modal__close" data-modal-close>
+            <svg width="24" height="16">
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+         <p class="about-modal__pretitle">ORCI VARIUS</p>
+            <h2 class="about-modal__title">TORQUENT</h2>
+        <div class="about-modal__content">
+        <img class="about-modal__img" src="./images/icecream2-about-pic1.jpeg" alt="imeg-modal">
+            <div class="about-modal__wrapper">
+            <ul class="about-modal__list">
+                <li class="about-modal__item">
+                    <p class="about-modal__text about__text-color">Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel
+                    vestibulum libero pharetra vel. Pellentesque lorem augue, fermentum nec nibh et, fringilla sollicitudin orci.</p>
+                </li>
+                <li class="about-modal__item">
+                    <p class="about-modal__text">Integer pharetra magna non ante blandit lobortis. Sed mollis consequat eleifend. Aliquam consectetur orci eget dictum
+                    tristique. Aenean et sodales est, ut vestibulum lorem. Ut ultricies imperdiet sodales. Aliquam fringilla.</p>
+                </li>
+                <li class="about-modal__item">
+                    <p class="about-modal__text">Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo
+                    varius purus, non dictum elit nibh ut massa.</p>
+                </li>
+            </ul>
+            <button type="submit" class="about-modal__button">Read more</button>
+            </div>
+        </div>
+    </div>
+</div>
