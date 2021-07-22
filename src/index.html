@@ -30,8 +30,8 @@
   <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
   <script src="./index.js"></script>
   <script src="./js/mobile-menu.js"></script>
-  <script src="./js/modal-menu.js"></script>
   <script src=" ./js/modal.js"></script>
+  <script src=" ./js/about-menu.js"></script>
 
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -44,7 +44,18 @@
         slidesToScroll: 1
       });
   </script>
-
+  <script>
+    $(document).ready(function () {
+        $('a[href*=#]').bind("click", function (e) {
+          var anchor = $(this);
+          $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+          }, 1000);
+          e.preventDefault();
+        });
+        return false;
+      });
+  </script>
 </body>
 
 </html>

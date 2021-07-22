@@ -55,8 +55,6 @@
 
 .about__pretitle {
   font-family: 'Titan One';
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 1.145;
   text-align: center;
@@ -73,8 +71,160 @@
 
 .about__title {
   font-family: 'Titan One';
-  font-style: normal;
-  font-weight: normal;
+  font-size: 34px;
+  line-height: 1.145;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 26px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 58px;
+  }
+}
+.about__wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 17px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-left: 74px;
+  }
+}
+.about__item {
+  padding-top: 45px;
+  @media screen and (min-width: 768px) {
+    padding-top: 35px;
+  }
+}
+.about__text {
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: #907e82;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+.about__text-color {
+  color: #000000;
+  padding-top: 45px;
+}
+.about__button {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.312;
+  border: none;
+  border-radius: 22px;
+  width: 176px;
+  height: 44px;
+  cursor: pointer;
+  margin-top: 17px;
+  background-color: #ffffff;
+  color: #d41342;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    margin-top: 62px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    margin-top: 45px;
+  }
+}
+.about__content {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.about-modal {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff5f6;
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.about-modal__container {
+  position: absolute;
+  overflow: auto;
+  padding: 40px;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.torquent {
+  padding-bottom: 25px;
+}
+.torquent__content {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.torquent__wrapper {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 17px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 74px;
+  }
+}
+
+.torquent__pretitle,
+.team__pretitle {
+  font-family: 'Titan One';
+  font-size: 18px;
+  line-height: 1.145;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffa5ba;
+  margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+  }
+}
+.torquent__title,
+.team__title {
+  font-family: 'Titan One';
   font-size: 34px;
   line-height: 1.145;
   text-align: center;
@@ -89,74 +239,162 @@
     font-size: 58px;
   }
 }
-.about__list {
+.torquent__item {
+  padding-bottom: 45px;
   @media screen and (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 17px;
-  }
-  @media screen and (min-width: 1280px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    margin-left: 74px;
+    padding-bottom: 35px;
   }
 }
-.about__text {
+.torquent__text {
   font-family: 'DM Sans';
-  font-style: normal;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.62;
   color: #907e82;
-  margin-top: 45px;
-  padding-left: 30px;
-  padding-right: 30px;
   @media screen and (min-width: 768px) {
     font-size: 14px;
-    margin-top: 35px;
     padding-left: 0px;
     padding-right: 0px;
   }
   @media screen and (min-width: 1280px) {
+    font-size: 18px;
   }
 }
-.about__text-color {
-  color: #000000;
-}
-.about__button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+.about-modal__button {
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.312;
   border: none;
   border-radius: 22px;
-  min-width: 160px;
+  width: 176px;
+  height: 44px;
   cursor: pointer;
-  padding: 10px 17px;
-  background-color: #ffffff;
-  color: #d41342;
-  margin-left: 30px;
   margin-top: 17px;
+  background-color: #d41342;
+  color: #ffffff;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: #ecebeb;
+    color: #d41342;
   }
   @media screen and (min-width: 768px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: baseline;
-    margin-left: 0px;
+    font-size: 14px;
     margin-top: 62px;
   }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    margin-top: 45px;
+  }
 }
-.about__content {
+
+.torquent__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  @media screen and (min-width: 768px) {
+    max-width: 400px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 600px;
+  }
+}
+.about-menu-close {
+  cursor: pointer;
+  padding: 10px 0;
+  position: absolute;
+  top: 23px;
+  right: 28px;
+  border: none;
+  background: transparent;
+  fill: #d41342;
+  &:hover,
+  &:focus {
+    fill: #ffa5ba;
+  }
+}
+.about-modal__close__icon {
+  display: block;
+  width: 14px;
+  height: 14px;
+  stroke: var(--main-text-color);
+}
+
+.team__list {
+  margin-top: 30px;
+  text-align: center;
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
   }
+}
+.team__list__card {
+  width: 100%;
+  border-radius: 24px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 3);
+    &:not(:nth-last-child(-n + 3)) {
+      margin-bottom: 30px;
+    }
+    &:not(:nth-child(3n)) {
+      margin-right: 30px;
+    }
+  }
+}
+.team {
+  text-align: center;
+}
+
+.team__list__box {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 24px;
+}
+
+.team__list__name {
+  color: #d41342;
+  text-transform: uppercase;
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1.145;
+  text-align: center;
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+  }
+}
+.team__list__description {
+  color: #ffa5ba;
+  text-align: center;
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.52;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    line-height: 1.76;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+  }
+}
+.team__list__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.team__button {
+  margin: 0;
 }
