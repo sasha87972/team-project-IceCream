@@ -28,26 +28,14 @@
     &__list {
         @media screen and (min-width: 768px) {
             display: flex; 
-            flex-wrap: wrap;
             margin-left: -20px;
             margin-top: -20px;
         }
         @media screen and (min-width: 1280px) {
             display: flex; 
-            flex-wrap: wrap;
             margin-left: 0px;
             margin-top: -20px;
         }
-
-
-        // display: block;
-        // justify-content: center;
-        // padding: 0;
-        // position: relative;
-        // @media screen and (min-width: 768px) {
-        //     display: flex;
-        //     justify-content: center;
-        // }
     } 
     &__title {
         font-family: "Titan One";
@@ -80,7 +68,7 @@
             font-size: 26px;
         }
         @media screen and (min-width: 1280px) {
-            font-size: 18px;
+            font-size: 30px;
         }
     } 
     &__name {
@@ -97,14 +85,10 @@
         line-height: 1.145;
         text-align: center;
         @media screen and (min-width: 768px) {
-            padding-right: 53px;
-            padding-left: 53px;
             padding-top: 152px;
         }
         @media screen and (min-width: 1280px) {
             padding-top: 163px;
-            padding-right: 78px;
-            padding-left: 77px;
             font-size: 30px;
         }
         &--ice-cream {
@@ -137,11 +121,8 @@
     }
     &__description {
         color: white;
-        padding-left: 40px;
-        padding-right: 40px;
-        padding-bottom: 62px;
-        text-align: center;
-        padding-top: 0;
+        padding-right: 23px;
+        padding-left: 23px;
         font-family: "DM Sans";
         font-weight: 700;
         font-style: normal;
@@ -180,6 +161,13 @@
         border: none;
         background-color: transparent;
         margin-bottom: 41px;
+        margin-top: 30px;
+        @media screen and (min-width: 768px) {
+            margin-top: 40px;
+        }
+        @media screen and (min-width: 1280px) {
+            margin-top: 62px;
+        }
     }
     &__points {
         position: relative;
@@ -194,7 +182,7 @@
             margin-bottom: 16px;
         }
         @media screen and (min-width: 768px) {
-            flex-basis: calc((100% - 40px) / 4);
+            flex-basis: calc((100% - 40px) / 3);
             height: 587px;
             margin-left: 20px;
             margin-top: 20px;
@@ -203,25 +191,10 @@
             }
         }
         @media screen and (min-width: 1280px) {
-            flex-basis: calc((100% - 46px) / 4);
+            flex-basis: calc((100% - 46px) / 3);
             height: 735px;
             padding-top: 200px;
         }
-    
-        // display: block;
-        // justify-content: center;
-        // position: relative;
-        // padding-top: 144px;
-        // @media screen and (min-width: 768px) {
-        //     display: flex;
-        //     justify-content: center;
-        //     flex-basis: calc((100% - 24px) / 2);  
-        //     padding-top: 150px;  
-        // }
-        // @media screen and (min-width: 1280px) {
-        //     flex-basis: calc((100% - 20px) / 2); 
-        //     padding-top: 259px;  
-        // }
         position: relative;
         &:before {
             position: absolute;
