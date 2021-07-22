@@ -36,16 +36,6 @@
             margin-left: 0px;
             margin-top: -20px;
         }
-
-
-        // display: block;
-        // justify-content: center;
-        // padding: 0;
-        // position: relative;
-        // @media screen and (min-width: 768px) {
-        //     display: flex;
-        //     justify-content: center;
-        // }
     } 
     &__title {
         font-family: "Titan One";
@@ -78,7 +68,7 @@
             font-size: 26px;
         }
         @media screen and (min-width: 1280px) {
-            font-size: 18px;
+            font-size: 30px;
         }
     } 
     &__name {
@@ -205,21 +195,6 @@
             height: 735px;
             padding-top: 200px;
         }
-    
-        // display: block;
-        // justify-content: center;
-        // position: relative;
-        // padding-top: 144px;
-        // @media screen and (min-width: 768px) {
-        //     display: flex;
-        //     justify-content: center;
-        //     flex-basis: calc((100% - 24px) / 2);  
-        //     padding-top: 150px;  
-        // }
-        // @media screen and (min-width: 1280px) {
-        //     flex-basis: calc((100% - 20px) / 2); 
-        //     padding-top: 259px;  
-        // }
         position: relative;
         &:before {
             position: absolute;
