@@ -57,6 +57,20 @@
         return false;
       });
   </script>
+  <script type="text/javascript">
+    $(function () {
+      $(window).scroll(function () {
+        if ($(this).scrollTop() != 0) {
+          $('#return').fadeIn();
+        } else {
+          $('#return').fadeOut();
+        }
+      });
+      $('#return').click(function () {
+        $('body,html').animate({ scrollTop: 0 }, 700);
+      });
+    });
+  </script>
 </body>
 
 </html>
